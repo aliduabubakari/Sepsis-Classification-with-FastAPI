@@ -41,7 +41,8 @@ To set up the project environment, follow these steps:
 
 ## Data
 
-The data used in this project consists of a diverse collection of sepsis cases obtained from https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md 
+The data used in this project consists of a diverse collection of sepsis cases obtained from [Sepsis](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md).
+
 
 ## Modeling
 
