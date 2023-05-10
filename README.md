@@ -61,10 +61,10 @@ The data used in this project consists of a diverse collection of sepsis cases o
 [Potential areas for future development and improvement]
 
 ## Contact
+`Alidu Abubakari`
+`Data Analyst`
+`Azubi Africa`
 
-Alidu Abubakari 
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alidu-abubakari-2612bb57/) 
 
-Data Analyst 
-
-Azubi Africa 
 
