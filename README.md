@@ -19,12 +19,22 @@ The "Sepsis Classification with FastAPI" project aims to develop an accurate and
 
 The objectives of the project are as follows:
 
-Train a machine learning model on a diverse dataset of sepsis cases to accurately predict the likelihood of sepsis in patients.
-Utilize the FastAPI framework to create a user-friendly and efficient web interface for healthcare professionals to interact with the sepsis classification model.
-Improve diagnostic capabilities by achieving high accuracy, sensitivity, and specificity in sepsis classification.
-Provide a comprehensive and scalable solution that can be easily deployed in real-time healthcare environments.
+1. Train a machine learning model on a diverse dataset of sepsis cases to accurately predict the likelihood of sepsis in patients.
+
+2. Utilize the FastAPI framework to create a user-friendly and efficient web interface for healthcare professionals to interact with the sepsis classification model.
+
+3. Improve diagnostic capabilities by achieving high accuracy, sensitivity, and specificity in sepsis classification.
+
+4. Provide a comprehensive and scalable solution that can be easily deployed in real-time healthcare environments.
 
 Key challenges in this project include acquiring and preprocessing a reliable sepsis dataset, selecting an appropriate machine learning algorithm, optimizing the model's performance, and deploying the system in a secure and efficient manner.
+
+
+## Summary
+| Code      | Name        | Published Article |  Deployed App |
+|-----------|-------------|:-------------:|------:|
+| LP6 | Sepsis Prediction App with fastapi and Streamlit|  [https://medium.com/@alidu143/building-a-sales-prediction-app-with-streamlit-and-machine-learning-31746625d6ca](/) | [https://huggingface.co/spaces/Abubakari/Sales_Prediction#sales-prediction-app](/) |
+
 
 ## Getting Started
 
@@ -43,6 +53,9 @@ To set up the project environment, follow these steps:
 
 The data used in this project consists of a diverse collection of sepsis cases obtained from [Sepsis](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md).
 
+## Exploratory Data Analysis
+
+
 
 ## Modeling
 
@@ -53,6 +66,10 @@ The data used in this project consists of a diverse collection of sepsis cases o
 [Metrics used to evaluate the model's performance, including both training and testing results]
 
 ## Deployment
+
+### Fastapi delpoyment 
+
+### Streamlit deployment 
 
 [Instructions for deploying the model, including any necessary setup steps and requirements]
 
