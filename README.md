@@ -97,16 +97,16 @@ The following models were evaluated:
 
 - Random Forest: The Random Forest model achieved an F1 score of 0.548 and an AUC score of 0.683.
 
-Given the imbalanced nature of the data, the models' performance was assessed using the F1 score, which considers both precision and recall, providing a balanced measure of accuracy. Additionally, the AUC score was considered to evaluate the models' ability to distinguish between positive and negative cases.
-Hyperparameter tuning was also implemented to optimize the performance of the models. By fine-tuning the hyperparameters, it was possible to identify the best combination of parameter values that yielded the highest performance for each model
+
 
 ## Evaluation
 
-[Metrics used to evaluate the model's performance, including both training and testing results]
+Given the imbalanced nature of the data, the models' performance was assessed using the F1 score, which considers both precision and recall, providing a balanced measure of accuracy. Additionally, the AUC score was considered to evaluate the models' ability to distinguish between positive and negative cases.
+Hyperparameter tuning was also implemented to optimize the performance of the models. By fine-tuning the hyperparameters, it was possible to identify the best combination of parameter values that yielded the highest performance for each model
 
 ## Deployment
 
-### Fastapi delpoyment 
+### Fastapi deployment 
 
 1. Make sure you have FastAPI and any necessary dependencies installed. You can install FastAPI using pip:
 
@@ -124,7 +124,7 @@ uvicorn main:app --reload
 
 5. Open a web browser or use an API testing tool (e.g., Postman) to interact with your deployed FastAPI application. Use the API endpoint provided in the terminal to make requests and receive responses.
 
-### 
+### Containerized deployment 
 
 To run the Docker container based on the provided Dockerfile, follow these steps:
 
