@@ -1,11 +1,5 @@
 # Sepsis-Classification-with-FastAPI
 
-<p align="center">
-  <img src="images/fastapi.jpg" alt="FastAPI" width="400">
-</p>
-
-
-
 This project is focused on the accurate and efficient classification of sepsis cases using the FastAPI framework. Sepsis is a critical medical condition that requires prompt identification and treatment. This project aims to provide a streamlined solution for healthcare professionals to classify sepsis cases quickly and effectively.
 
 ## Table of Contents
@@ -35,7 +29,6 @@ The objectives of the project are as follows:
 
 Key challenges in this project include acquiring and preprocessing a reliable sepsis dataset, selecting an appropriate machine learning algorithm, optimizing the model's performance, and deploying the system in a secure and efficient manner.
 
-### Project repo structure 
 ## Project Structure
 
 - README.md
@@ -130,6 +123,11 @@ In addition to these exploratory analyses, hypotheses were formulated based on p
 
 ### Hypotheses:
 
+<p align="center">
+  <img src="images/hypothesis.webp" alt="hypothesis" width="600">
+</p>
+
+
 - **Hypothesis 1:** Higher plasma glucose levels (PRG) are associated with an increased risk of developing sepsis.
 
 - **Hypothesis 2:** Abnormal blood work results, such as high values of PL, SK, and BD2, are indicative of a higher likelihood of sepsis.
@@ -172,6 +170,10 @@ Hyperparameter tuning was also implemented to optimize the performance of the mo
 ## Deployment
 
 ### Fastapi deployment 
+
+<p align="center">
+  <img src="images/fastapi.jpg" alt="FastAPI" width="400">
+</p>
 
 1. Make sure you have FastAPI and any necessary dependencies installed. You can install FastAPI using pip:
 
