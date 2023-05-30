@@ -55,20 +55,39 @@ To set up the project environment, follow these steps:
 
 The data used in this project consists of a diverse collection of sepsis cases obtained from [Sepsis](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md).
 
+## Data Fields
+
+| Column Name | Data Features | Description                                      |
+|-------------|-----------------|--------------------------------------------------|
+| ID          | N/A             | Unique number to represent patient ID             |
+| PRG         | Attribute 1     | Plasma glucose                                   |
+| PL          | Attribute 2     | Blood Work Result-1 (mu U/ml)                    |
+| PR          | Attribute 3     | Blood Pressure (mm Hg)                           |
+| SK          | Attribute 4     | Blood Work Result-2 (mm)                         |
+| TS          | Attribute 5     | Blood Work Result-3 (mu U/ml)                    |
+| M11         | Attribute 6     | Body mass index (weight in kg/(height in m)^2)   |
+| BD2         | Attribute 7     | Blood Work Result-4 (mu U/ml)                    |
+| Age         | Attribute 8     | Patient's age (years)                            |
+| Insurance   | N/A             | If a patient holds a valid insurance card         |
+| Sepsis      | Target          | Positive: if a patient in ICU will develop sepsis,<br> Negative: otherwise |
+
+
 
 
 ## Exploratory Data Analysis
 
+## Exploratory Data Analysis
 
-During the exploratory data analysis (EDA) phase of the project, a thorough investigation of the sepsis dataset was conducted to gain insights into the data through different types of analyses.
+During the exploratory data analysis (EDA) phase, a comprehensive investigation of the sepsis dataset was conducted to gain insights through various types of analyses.
 
-First, univariate analysis was performed to examine each variable individually. Summary statistics such as mean, median, standard deviation, and quartiles were calculated to understand the central tendency and spread of the data.
+- **Univariate analysis:** A thorough examination of each variable individually was performed. Summary statistics such as mean, median, standard deviation, and quartiles were calculated to understand the central tendency and spread of the data.
 
-Next, bivariate analysis was carried out to explore the relationships between pairs of variables. This analysis aimed to identify patterns and potential predictor variables that could be useful for sepsis classification.
+- **Bivariate analysis:** Relationships between pairs of variables were explored to identify patterns and potential predictor variables for sepsis classification.
 
-Furthermore, multivariate analysis was conducted to examine relationships among multiple variables simultaneously, allowing for a deeper understanding of their interactions and impact on sepsis.
+- **Multivariate analysis:** Relationships among multiple variables were examined simultaneously, allowing for a deeper understanding of their interactions and impact on sepsis.
 
-In addition to the exploratory analyses, hypotheses were formulated based on prior knowledge and existing research. These hypotheses were tested using statistical tests like t-tests, chi-square tests, or ANOVA tests, depending on the nature of the variables. The results of these tests helped validate or refute the formulated hypotheses and provided further insights into the relationships between variables.
+In addition to these exploratory analyses, hypotheses were formulated based on prior knowledge and existing research. Statistical tests such as t-tests, chi-square tests, or ANOVA tests were utilized to test these hypotheses, depending on the nature of the variables. The results of these tests validated or refuted the formulated hypotheses and provided further insights into the relationships between variables.
+
 
 ### Hypotheses:
 
@@ -127,7 +146,7 @@ pip install fastapi
 ```bash
 uvicorn main:app --reload
 ```
-4. fter running the command, you should see output indicating that the FastAPI application is running and listening on a specific address (e.g., http://127.0.0.1:8000). This address represents the API endpoint where you can access your application.
+4. After running the command, you should see output indicating that the FastAPI application is running and listening on a specific address (e.g., http://127.0.0.1:8000). This address represents the API endpoint where you can access your application.
 
 5. Open a web browser or use an API testing tool (e.g., Postman) to interact with your deployed FastAPI application. Use the API endpoint provided in the terminal to make requests and receive responses.
 
