@@ -15,6 +15,8 @@ This project is focused on the accurate and efficient classification of sepsis c
 
 ## Project Overview
 
+
+
 The "Sepsis Classification with FastAPI" project aims to develop an accurate and efficient classification system for sepsis cases using the FastAPI framework. Sepsis is a life-threatening condition that requires immediate medical attention. This project addresses the critical need for timely identification and classification of sepsis cases to facilitate prompt treatment and improve patient outcomes.
 
 The objectives of the project are as follows:
@@ -53,23 +55,6 @@ To set up the project environment, follow these steps:
 
 The data used in this project consists of a diverse collection of sepsis cases obtained from [Sepsis](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md).
 
-### Data Fields
-
-| Column Name | Features | Description                                      |
-|-------------|-----------------|--------------------------------------------------|
-| ID          | N/A             | Unique number to represent patient ID             |
-| PRG         | Attribute 1     | Plasma glucose                                   |
-| PL          | Attribute 2     | Blood Work Result-1 (mu U/ml)                    |
-| PR          | Attribute 3     | Blood Pressure (mm Hg)                           |
-| SK          | Attribute 4     | Blood Work Result-2 (mm)                         |
-| TS          | Attribute 5     | Blood Work Result-3 (mu U/ml)                    |
-| M11         | Attribute 6     | Body mass index (weight in kg/(height in m)^2)   |
-| BD2         | Attribute 7     | Blood Work Result-4 (mu U/ml)                    |
-| Age         | Attribute 8     | Patient's age (years)                            |
-| Insurance   | N/A             | If a patient holds a valid insurance card         |
-| Sepsis      | Target          | Positive: if a patient in ICU will develop sepsis,<br> Negative: otherwise |
-
-
 
 
 ## Exploratory Data Analysis
@@ -85,36 +70,39 @@ Furthermore, multivariate analysis was conducted to examine relationships among 
 
 In addition to the exploratory analyses, hypotheses were formulated based on prior knowledge and existing research. These hypotheses were tested using statistical tests like t-tests, chi-square tests, or ANOVA tests, depending on the nature of the variables. The results of these tests helped validate or refute the formulated hypotheses and provided further insights into the relationships between variables.
 
-Hypotheses:
+### Hypotheses:
 
-- Hypothesis 1: Higher plasma glucose levels (PRG) are associated with an increased risk of developing sepsis.
+- **Hypothesis 1:** Higher plasma glucose levels (PRG) are associated with an increased risk of developing sepsis.
 
-- Hypothesis 2: Abnormal blood work results, such as high values of PL, SK, and BD2, are indicative of a higher likelihood of sepsis.
+- **Hypothesis 2:** Abnormal blood work results, such as high values of PL, SK, and BD2, are indicative of a higher likelihood of sepsis.
 
-- Hypothesis 3: Older patients are more likely to develop sepsis compared to younger patients.
+- **Hypothesis 3:** Older patients are more likely to develop sepsis compared to younger patients.
 
-- Hypothesis 4: Patients with higher body mass index (BMI) values (M11) have a lower risk of sepsis.
+- **Hypothesis 4:** Patients with higher body mass index (BMI) values (M11) have a lower risk of sepsis.
 
-- Hypothesis 5: Patients without valid insurance cards are more likely to develop sepsis.
+- **Hypothesis 5:** Patients without valid insurance cards are more likely to develop sepsis.
 
 These hypotheses, along with the results of the EDA, contribute to a deeper understanding of the dataset and provide valuable insights for further analysis and model development.
 
 
+
 ## Modeling
 
-During the modeling phase, considering the imbalanced nature of the data, the evaluation of models was focused on metrics that are robust to imbalanced datasets. The main metrics of interest were F1 score and AUC score, which provide a balanced assessment of model performance.
+During the modeling phase, the evaluation of models took into consideration the imbalanced nature of the data. The main metrics used to assess model performance were the F1 score and AUC score, which provide a balanced assessment for imbalanced datasets.
 
 The following models were evaluated:
 
-- Decision Tree: The Decision Tree model achieved an F1 score of 0.602 and an AUC score of 0.725.
+- **Decision Tree:** The Decision Tree model achieved an F1 score of 0.602 and an AUC score of 0.725.
 
-- Logistic Regression: The Logistic Regression model demonstrated improved performance with an F1 score of 0.634 and an AUC score of 0.750.
+- **Logistic Regression:** The Logistic Regression model demonstrated improved performance with an F1 score of 0.634 and an AUC score of 0.750.
 
-- Naive Bayes: The Naive Bayes model obtained an F1 score of 0.575 and an AUC score of 0.692.
+- **Naive Bayes:** The Naive Bayes model obtained an F1 score of 0.575 and an AUC score of 0.692.
 
-- Support Vector Machines (SVM): The SVM model yielded an F1 score of 0.564 and an AUC score of 0.717.
+- **Support Vector Machines (SVM):** The SVM model yielded an F1 score of 0.564 and an AUC score of 0.717.
 
-- Random Forest: The Random Forest model achieved an F1 score of 0.548 and an AUC score of 0.683.
+- **Random Forest:** The Random Forest model achieved an F1 score of 0.548 and an AUC score of 0.683.
+
+These models were evaluated based on their F1 and AUC scores, providing insights into their performance on the imbalanced dataset.
 
 
 
