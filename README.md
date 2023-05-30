@@ -84,19 +84,19 @@ During the exploratory data analysis (EDA) phase, a comprehensive investigation 
 - **Univariate analysis:** A thorough examination of each variable individually was performed. Summary statistics such as mean, median, standard deviation, and quartiles were calculated to understand the central tendency and spread of the data.
 
 <p align="center">
-  <img src="images/1.jpg" alt="Univariate" width="400">
+  <img src="images/1.jpg" alt="Univariate" width="600">
 </p>
 
 - **Bivariate analysis:** Relationships between pairs of variables were explored to identify patterns and potential predictor variables for sepsis classification.
 
 <p align="center">
-  <img src="images/2.jpg" alt="Bivariate" width="400">
+  <img src="images/2.jpg" alt="Bivariate" width="600">
 </p>
 
 - **Multivariate analysis:** Relationships among multiple variables were examined simultaneously, allowing for a deeper understanding of their interactions and impact on sepsis.
 
 <p align="center">
-  <img src="images/3.png" alt="multivariate" width="400">
+  <img src="images/3.png" alt="multivariate" width="600">
 </p>
 
 In addition to these exploratory analyses, hypotheses were formulated based on prior knowledge and existing research. Statistical tests such as t-tests, chi-square tests, or ANOVA tests were utilized to test these hypotheses, depending on the nature of the variables. The results of these tests validated or refuted the formulated hypotheses and provided further insights into the relationships between variables.
@@ -207,6 +207,11 @@ For example, if you mapped the container's port 8000 to your host's port 8080, y
 [Instructions for deploying the model, including any necessary setup steps and requirements]
 
 ## Future Work
+
+<p align="center">
+  <img src="images/R.png" alt="multivariate" width="600">
+</p>
+
 
 [Potential areas for future development and improvement]
 
