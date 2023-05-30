@@ -7,9 +7,9 @@ import numpy as np
 app = FastAPI()
 
 def load_model():
-    num_imputer = joblib.load('numerical_imputer.joblib')
-    scaler = joblib.load('scaler.joblib')
-    model = joblib.load('Final_model.joblib')
+    num_imputer = joblib.load('assets/numerical_imputer.joblib')
+    scaler = joblib.load('assets/scaler.joblib')
+    model = joblib.load('assets/Final_model.joblib')
     return num_imputer, scaler, model
 
 def preprocess_input_data(input_data, num_imputer, scaler):

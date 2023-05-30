@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 import time
 
 # Load the pre-trained numerical imputer, scaler, and model using joblib
-num_imputer = joblib.load('numerical_imputer.joblib')
-scaler = joblib.load('scaler.joblib')
-model = joblib.load('Final_model.joblib')
+num_imputer = joblib.load('assets/numerical_imputer.joblib')
+scaler = joblib.load('assets/scaler.joblib')
+model = joblib.load('assets/Final_model.joblib')
 
 # Define a function to preprocess the input data
 def preprocess_input_data(input_data):
