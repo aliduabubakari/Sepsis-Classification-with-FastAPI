@@ -8,12 +8,13 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Install the Python dependencies
-#RUN pip install --no-cache-dir -r requirements.txt
-
 RUN pip install -r requirements.txt
 
 # Copy the application code to the working directory
-COPY . .
+COPY Fastapi .
+
+# Copy the models to the working directory
+COPY Assets ./Assets
 
 # Expose the port on which the application will run
 EXPOSE 8000
