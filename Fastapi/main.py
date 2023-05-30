@@ -1,94 +1,62 @@
 import pandas as pd
-import numpy as np
-from fastapi import FastAPI
-from pydantic import BaseModel
 import joblib
+from fastapi import FastAPI
+import uvicorn
+import numpy as np
 
-#Initializing the FastAPI Application:
-app = FastAPI() #An instance of the FastAPI class is created to serve as the application.
+app = FastAPI()
 
+def load_model():
+    num_imputer = joblib.load('numerical_imputer.joblib')
+    scaler = joblib.load('scaler.joblib')
+    model = joblib.load('Final_model.joblib')
+    return num_imputer, scaler, model
 
-# Define a Pydantic model for the input data
-class SepsisPredictionRequest(BaseModel):
-    PRG: float
-    PL: float
-    PR: float
-    SK: float
-    TS: float
-    M11: float
-    BD2: float
-    Age: float
-    Insurance: int
+def preprocess_input_data(input_data, num_imputer, scaler):
+    input_data_df = pd.DataFrame([input_data])
+    num_columns = [col for col in input_data_df.columns if input_data_df[col].dtype != 'object']
+    input_data_imputed_num = num_imputer.transform(input_data_df[num_columns])
+    input_scaled_df = pd.DataFrame(scaler.transform(input_data_imputed_num), columns=num_columns)
+    return input_scaled_df
 
-# Define a Pydantic model for the response
-class SepsisPredictionResponse(BaseModel):
-    predicted_sepsis: str
-
-# Load the pre-trained numerical imputer, scaler, and model using joblib
-num_imputer = joblib.load('numerical_imputer.joblib')
-scaler = joblib.load('scaler.joblib')
-model = joblib.load('Final_model.joblib')
-
-#Defining the Root Endpoint
 @app.get("/")
 def read_root():
-    return "Sepsis Prediction App" #It serves as the root endpoint of the application.
+    return "Sepsis Prediction App"
 
-# Defining the Prediction Endpoint:
-# Defining the Prediction Endpoint
-@app.get("/predict/{PRG}/{PL}/{PR}/{SK}/{TS}/{M11}/{BD2}/{Age}/{Insurance}", response_model=SepsisPredictionResponse)
-def predict_sepsis(
-    PRG: float,
-    PL: float,
-    PR: float,
-    SK: float,
-    TS: float,
-    M11: float,
-    BD2: float,
-    Age: float,
-    Insurance: int
-):
-    # Create an instance of SepsisPredictionRequest from the input data
-    input_data = SepsisPredictionRequest(
-        PRG=PRG,
-        PL=PL,
-        PR=PR,
-        SK=SK,
-        TS=TS,
-        M11=M11,
-        BD2=BD2,
-        Age=Age,
-        Insurance=Insurance
-    )
+@app.get("/sepsis/predict")
+def predict_sepsis_endpoint(PRG: float, PL: float, PR: float, SK: float, TS: float,
+                            M11: float, BD2: float, Age: float, Insurance: int):
+    num_imputer, scaler, model = load_model()
 
-    # Convert the input data to a pandas DataFrame
-    input_data_df = pd.DataFrame(input_data.dict(), index=[0])
+    input_data = {
+        'PRG': PRG,
+        'PL': PL,
+        'PR': PR,
+        'SK': SK,
+        'TS': TS,
+        'M11': M11,
+        'BD2': BD2,
+        'Age': Age,
+        'Insurance': Insurance
+    }
 
-    # Get the numerical columns from the input data
-    num_columns = [col for col in input_data_df.columns if input_data_df[col].dtype != 'object']
+    input_scaled_df = preprocess_input_data(input_data, num_imputer, scaler)
 
-    # Apply the numerical imputer to fill missing values in the numerical columns
-    input_data_imputed_num = num_imputer.transform(input_data_df[num_columns])
-
-    # Scale the numerical columns using the pre-trained scaler
-    input_scaled_df = pd.DataFrame(scaler.transform(input_data_imputed_num), columns=num_columns)
-
-    # Make the prediction using the pre-trained model
-    prediction = model.predict(input_scaled_df)[0]
     probabilities = model.predict_proba(input_scaled_df)[0]
+    prediction = np.argmax(probabilities)
 
-    # Determine the sepsis status based on the prediction
     sepsis_status = "Positive" if prediction == 1 else "Negative"
+    probability = probabilities[1] if prediction == 1 else probabilities[0]
 
-    # Create an output DataFrame with input data, prediction, and probabilities
-    output_df = input_data_df.copy()
-    output_df['Prediction'] = sepsis_status
-    output_df['Negative Probability'] = probabilities[0]
-    output_df['Positive Probability'] = probabilities[1]
+    statement = f"The patient is {sepsis_status}. There is a {'high' if prediction == 1 else 'low'} probability ({probability:.2f}) that the patient is susceptible to developing sepsis."
 
-    # Print the output DataFrame
-    print("Output DataFrame:")
-    print(output_df)
+    user_input_statement = "Please note this is the user-inputted data: "
 
-    # Return the prediction result as a response
-    return SepsisPredictionResponse(predicted_sepsis=sepsis_status)
+    output_df = pd.DataFrame([input_data])
+
+    result = {'predicted_sepsis': sepsis_status, 'statement': statement, 'user_input_statement': user_input_statement, 'input_data_df': output_df.to_dict('records')}
+
+    return result
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8080, reload=True)
