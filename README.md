@@ -53,6 +53,25 @@ To set up the project environment, follow these steps:
 
 The data used in this project consists of a diverse collection of sepsis cases obtained from [Sepsis](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md).
 
+### Data Fields
+
+| Column Name | Features | Description                                      |
+|-------------|-----------------|--------------------------------------------------|
+| ID          | N/A             | Unique number to represent patient ID             |
+| PRG         | Attribute 1     | Plasma glucose                                   |
+| PL          | Attribute 2     | Blood Work Result-1 (mu U/ml)                    |
+| PR          | Attribute 3     | Blood Pressure (mm Hg)                           |
+| SK          | Attribute 4     | Blood Work Result-2 (mm)                         |
+| TS          | Attribute 5     | Blood Work Result-3 (mu U/ml)                    |
+| M11         | Attribute 6     | Body mass index (weight in kg/(height in m)^2)   |
+| BD2         | Attribute 7     | Blood Work Result-4 (mu U/ml)                    |
+| Age         | Attribute 8     | Patient's age (years)                            |
+| Insurance   | N/A             | If a patient holds a valid insurance card         |
+| Sepsis      | Target          | Positive: if a patient in ICU will develop sepsis,<br> Negative: otherwise |
+
+
+
+
 ## Exploratory Data Analysis
 
 
