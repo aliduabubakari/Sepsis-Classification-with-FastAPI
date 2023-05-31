@@ -256,11 +256,11 @@ For example, if you mapped the container's port 8000 to your host's port 8080, y
 ## Future Work
 
 <p align="center">
-  <img src="images/R.png" alt="multivariate" width="600">
+  <img src="images/R.png" alt="sepsis solution recommendation" width="600">
 </p>
 
 
-[Potential areas for future development and improvement]
+For future work, incorporating clustering algorithms can be a valuable addition to sepsis identification and classification. Clustering algorithms can help in grouping similar patient data together based on patterns and similarities.
 
 ## Contact
 `Alidu Abubakari`
