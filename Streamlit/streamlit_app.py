@@ -3,11 +3,19 @@ import pandas as pd
 import joblib
 import matplotlib.pyplot as plt
 import time
+import os 
 
 # Load the pre-trained numerical imputer, scaler, and model using joblib
-num_imputer = joblib.load('assets/numerical_imputer.joblib')
-scaler = joblib.load('assets/scaler.joblib')
-model = joblib.load('assets/Final_model.joblib')
+cwd = os.getcwd()
+destination = os.path.join(cwd, "Assets")
+
+imputer_filepath = os.path.join(destination, "numerical_imputer.joblib")
+scaler_filepath = os.path.join(destination, "scaler.joblib")
+model_filepath = os.path.join(destination, "lr_model.joblib")
+
+num_imputer = joblib.load(imputer_filepath)
+scaler = joblib.load(scaler_filepath)
+model = joblib.load(model_filepath)
 
 # Define a function to preprocess the input data
 def preprocess_input_data(input_data):
