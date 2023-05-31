@@ -124,7 +124,7 @@ In addition to these exploratory analyses, hypotheses were formulated based on p
 ### Hypotheses:
 
 <p align="center">
-  <img src="images/hypothesis.webp" alt="hypothesis" width="600">
+  <img src="images/HypothesisTesting.jpg" alt="hypothesis" width="600">
 </p>
 
 
@@ -143,6 +143,11 @@ These hypotheses, along with the results of the EDA, contribute to a deeper unde
 
 
 ## Modeling
+
+
+<p align="center">
+  <img src="images/Modelling.png" alt="hypothesis" width="600">
+</p>
 
 During the modeling phase, the evaluation of models took into consideration the imbalanced nature of the data. The main metrics used to assess model performance were the F1 score and AUC score, which provide a balanced assessment for imbalanced datasets.
 
@@ -163,6 +168,11 @@ These models were evaluated based on their F1 and AUC scores, providing insights
 
 
 ## Evaluation
+
+
+<p align="center">
+  <img src="images/Evaluation.png" alt="hypothesis" width="600">
+</p>
 
 Given the imbalanced nature of the data, the models' performance was assessed using the F1 score, which considers both precision and recall, providing a balanced measure of accuracy. Additionally, the AUC score was considered to evaluate the models' ability to distinguish between positive and negative cases.
 Hyperparameter tuning was also implemented to optimize the performance of the models. By fine-tuning the hyperparameters, it was possible to identify the best combination of parameter values that yielded the highest performance for each model
@@ -191,6 +201,15 @@ uvicorn main:app --reload
 4. After running the command, you should see output indicating that the FastAPI application is running and listening on a specific address (e.g., http://127.0.0.1:8000). This address represents the API endpoint where you can access your application.
 
 5. Open a web browser or use an API testing tool (e.g., Postman) to interact with your deployed FastAPI application. Use the API endpoint provided in the terminal to make requests and receive responses.
+
+<p align="center">
+  <img src="images/fastapi1.jpg" alt="FastAPI" width="400">
+</p>
+
+<p align="center">
+  <img src="images/fastapi2.jpg" alt="FastAPI" width="400">
+</p>
+
 
 ### Containerized deployment 
 
