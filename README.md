@@ -58,7 +58,7 @@ Key challenges in this project include acquiring and preprocessing a reliable se
 ## Summary
 | Code      | Name        | Published Article |  Deployed App |
 |-----------|-------------|:-------------:|------:|
-| LP6 | Sepsis Prediction App with fastapi and Streamlit|  [https://medium.com/@alidu143/building-a-sales-prediction-app-with-streamlit-and-machine-learning-31746625d6ca](/) | [https://huggingface.co/spaces/Abubakari/Sales_Prediction#sales-prediction-app](/) |
+| LP6 | Sepsis Prediction App with fastapi and Streamlit|  [https://medium.com/@alidu143/deploying-fastapi-for-sepsis-occurrence-prediction-using-machine-learning-classification-models-f6971aa584ff](/) | [https://huggingface.co/spaces/Abubakari/Sales_Prediction#sales-prediction-app](/) |
 
 
 ## Getting Started
@@ -169,13 +169,17 @@ These models were evaluated based on their F1 and AUC scores, providing insights
 
 ## Evaluation
 
-
 <p align="center">
   <img src="images/Evaluation.png" alt="hypothesis" width="600">
 </p>
 
 Given the imbalanced nature of the data, the models' performance was assessed using the F1 score, which considers both precision and recall, providing a balanced measure of accuracy. Additionally, the AUC score was considered to evaluate the models' ability to distinguish between positive and negative cases.
-Hyperparameter tuning was also implemented to optimize the performance of the models. By fine-tuning the hyperparameters, it was possible to identify the best combination of parameter values that yielded the highest performance for each model
+
+<p align="center">
+  <img src="images/results.png" alt="results" width="600">
+</p>
+
+Hyperparameter tuning was also implemented to optimize the performance of the models. By fine-tuning the hyperparameters, it was possible to identify the best combination of parameter values that yielded the highest performance for each model. 
 
 ## Deployment
 
