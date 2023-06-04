@@ -4,7 +4,7 @@ This project is focused on the accurate and efficient classification of sepsis c
 
 
 <p align="center">
-  <img src="images/streamlit_4.jpg" alt="Streamlit input" width="600">
+  <img src="images/streamlit_4.jpg" alt="Streamlit input" width="800">
 </p>
 
 This project aims to provide a streamlined solution for healthcare professionals to classify sepsis cases quickly and effectively.
@@ -73,9 +73,15 @@ Key challenges in this project include acquiring and preprocessing a reliable se
 To set up the project environment, follow these steps:
 
 1. Clone the repository:
-git clone [my_github](https://github.com/aliduabubakari/Sepsis-Classification-with-FastAPI.git)
+
+git clone my_github 
+
+```bash 
+https://github.com/aliduabubakari/Sepsis-Classification-with-FastAPI.git
+```
 
 2. Install the required dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -193,7 +199,7 @@ These models were evaluated based on their F1 and AUC scores, providing insights
 ## Evaluation
 
 <p align="center">
-  <img src="images/Evaluation.png" alt="hypothesis" width="600">
+  <img src="images/Evaluation.png" alt="hypothesis" width="400">
 </p>
 
 Given the imbalanced nature of the data, the models' performance was assessed using the F1 score, which considers both precision and recall, providing a balanced measure of accuracy. Additionally, the AUC score was considered to evaluate the models' ability to distinguish between positive and negative cases.
@@ -209,7 +215,7 @@ Hyperparameter tuning was also implemented to optimize the performance of the mo
 ### Fastapi deployment 
 
 <p align="center">
-  <img src="images/fastapi.jpg" alt="FastAPI" width="600">
+  <img src="images/fastapi.jpg" alt="FastAPI" width="700">
 </p>
 
 1. Make sure you have FastAPI and any necessary dependencies installed. You can install FastAPI using pip:
@@ -233,11 +239,11 @@ uvicorn main:app --reload
 The API documentation provides details about the available endpoints, request and response formats, and example usage. You can access the documentation by visiting the /docs endpoint after starting the server (http://localhost:8000/docs).
 
 <p align="center">
-  <img src="images/fastapi1.jpg" alt="FastAPI" width="600">
+  <img src="images/fastapi1.jpg" alt="FastAPI" width="800">
 </p>
 
 <p align="center">
-  <img src="images/fastapi2.jpg" alt="FastAPI" width="600">
+  <img src="images/fastapi2.jpg" alt="FastAPI" width="800">
 </p>
 
 
@@ -289,7 +295,7 @@ pip install -r requirements.txt
 ``` 
 To run the demo app (being at the repository root), use the following command:
 ```bash 
-streamlit run lp4.py
+streamlit run streamlit_app.py
 ```
 
 ##### App Execution on Huggingface
