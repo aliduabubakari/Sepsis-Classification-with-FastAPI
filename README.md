@@ -1,6 +1,13 @@
 # Sepsis-Classification-with-FastAPI
 
-This project is focused on the accurate and efficient classification of sepsis cases using the FastAPI framework. Sepsis is a critical medical condition that requires prompt identification and treatment. This project aims to provide a streamlined solution for healthcare professionals to classify sepsis cases quickly and effectively.
+This project is focused on the accurate and efficient classification of sepsis cases using the FastAPI framework. Sepsis is a critical medical condition that requires prompt identification and treatment. 
+
+
+<p align="center">
+  <img src="images/streamlit_4.jpg" alt="Streamlit input" width="400">
+</p>
+
+This project aims to provide a streamlined solution for healthcare professionals to classify sepsis cases quickly and effectively.
 
 ## Table of Contents
 
@@ -51,14 +58,14 @@ Key challenges in this project include acquiring and preprocessing a reliable se
 - Streamlit
   - Strealit_.jpg
   - streamlit_app.py
-  - streamlit_app2.py
         
 
 
 ## Summary
-| Code      | Name        | Published Article |  Deployed App |
-|-----------|-------------|:-------------:|------:|
-| LP6 | Sepsis Prediction App with fastapi and Streamlit| [Medium_article](https://medium.com/@alidu143/deploying-fastapi-for-sepsis-occurrence-prediction-f6971aa584ff)(/) | [FastapiApp](https://huggingface.co/spaces/Abubakari/Sepsis-fastapi-prediction-app) (/) |
+| Code | Name                                                | Published Article                                                                                          | Deployed App                                                                                                 | Streamlit App                                                                                                |
+|------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| LP6  | Sepsis Prediction App with FastAPI and Streamlit     | [Medium Article](https://medium.com/@alidu143/deploying-fastapi-for-sepsis-occurrence-prediction-f6971aa584ff) | [FastAPI App](https://huggingface.co/spaces/Abubakari/Sepsis-fastapi-prediction-app)                        | [Streamlit App](https://huggingface.co/spaces/Abubakari/Sepsis-prediction-streamlit-app)                    |
+
 
 
 ## Project Setup
@@ -218,9 +225,12 @@ pip install fastapi
 ```bash
 uvicorn main:app --reload
 ```
-4. After running the command, you should see output indicating that the FastAPI application is running and listening on a specific address (e.g., http://127.0.0.1:8000). This address represents the API endpoint where you can access your application.
+4. After running the command, you should see output indicating that the FastAPI application is running and listening on a specific address (e.g., http:localhost:8000). This address represents the API endpoint where you can access your application.
 
 5. Open a web browser or use an API testing tool (e.g., Postman) to interact with your deployed FastAPI application. Use the API endpoint provided in the terminal to make requests and receive responses.
+
+#### API Documentation
+The API documentation provides details about the available endpoints, request and response formats, and example usage. You can access the documentation by visiting the /docs endpoint after starting the server (http://localhost:8000/docs).
 
 <p align="center">
   <img src="images/fastapi1.jpg" alt="FastAPI" width="400">
@@ -267,11 +277,42 @@ docker run -d -p 8080:8000 your-image-name
 8. After running the command, the Docker container will start, and your FastAPI application will be running inside the container.
 
 9. You can access your application by visiting http://localhost:host-port in your web browser or using an API testing tool.
+
 For example, if you mapped the container's port 8000 to your host's port 8080, you would access the application at http://localhost:8080.
 
 ### Streamlit deployment 
 
-[Instructions for deploying the model, including any necessary setup steps and requirements]
+Navigate to the cloned repository and run the command:
+
+```bash 
+pip install -r requirements.txt
+``` 
+To run the demo app (being at the repository root), use the following command:
+```bash 
+streamlit run lp4.py
+```
+
+##### App Execution on Huggingface
+
+Here's a step-by-step process on how to use the [Streamlit App](https://huggingface.co/spaces/Abubakari/Sepsis-prediction-streamlit-app) on Huggingface:
+
+
+<p align="center">
+  <img src="images/streamlit_1.jpg" alt="Streamlit input" width="400">
+</p>
+
+<p align="center">
+  <img src="images/streamlit_2.jpg" alt="Streamlit input" width="400">
+</p>
+
+<p align="center">
+  <img src="images/streamlit_3.jpg" alt="streamlit input" width="400">
+</p>
+
+<p align="center">
+  <img src="images/streamlit_5.jpg" alt="streamlit results" width="400">
+</p>
+
 
 ## Future Work
 
