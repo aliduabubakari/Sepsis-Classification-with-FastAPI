@@ -282,6 +282,11 @@ docker run -d -p 8080:8000 your-image-name
 
 8. After running the command, the Docker container will start, and your FastAPI application will be running inside the container.
 
+<p align="center">
+  <img src="images/fastapi3.jpg" alt="Desktop Docker" width="800">
+</p>
+
+
 9. You can access your application by visiting http://localhost:host-port in your web browser or using an API testing tool.
 
 For example, if you mapped the container's port 8000 to your host's port 8080, you would access the application at http://localhost:8080.
