@@ -61,17 +61,33 @@ Key challenges in this project include acquiring and preprocessing a reliable se
 | LP6 | Sepsis Prediction App with fastapi and Streamlit|  [https://medium.com/@alidu143/deploying-fastapi-for-sepsis-occurrence-prediction-using-machine-learning-classification-models-f6971aa584ff](/) | [https://huggingface.co/spaces/Abubakari/Sales_Prediction#sales-prediction-app](/) |
 
 
-## Getting Started
+## Project Setup
 
 To set up the project environment, follow these steps:
 
-1. Clone the repository: git clone https://github.com/your-username/sepsis-classification.git
-2. Install the required dependencies: pip install -r requirements.txt
+1. Clone the repository:
+git clone [my_github] (https://github.com/aliduabubakari/Sepsis-Classification-with-FastAPI.git)
+
+2. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
 3. Create a virtual environment:
-  Windows: python -m venv venv; venv\Scripts\activate
-  Linux & MacOS: python3 -m venv venv; source venv/bin/activate
-  Upgrade Pip: python -m pip install -q --upgrade pip
-4. Install the required packages: python -m pip install -qr requirements.txt
+
+- **Windows:**
+  ```bash
+  python -m venv venv
+  venv\Scripts\activate
+  ```
+
+- **Linux & MacOS:**
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
+
+You can copy each command above and run them in your terminal to easily set up the project environment.
 
 
 ## Data
