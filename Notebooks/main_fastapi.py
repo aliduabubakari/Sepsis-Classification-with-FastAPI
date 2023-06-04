@@ -39,15 +39,15 @@ def predict_sepsis_endpoint(PRG: float, PL: float, PR: float, SK: float, TS: flo
     num_imputer, scaler, model = load_model()
 
     input_data = {
-        'PRG': PRG,
-        'PL': PL,
-        'PR': PR,
-        'SK': SK,
-        'TS': TS,
-        'M11': M11,
-        'BD2': BD2,
-        'Age': Age,
-        'Insurance': Insurance
+        'PRG': [PRG],
+        'PL': [PL],
+        'PR': [PR],
+        'SK': [SK],
+        'TS': [TS],
+        'M11': [M11],
+        'BD2': [BD2],
+        'Age': [Age],
+        'Insurance': [Insurance]
     }
 
     input_scaled_df = preprocess_input_data(input_data, num_imputer, scaler)
@@ -62,10 +62,10 @@ def predict_sepsis_endpoint(PRG: float, PL: float, PR: float, SK: float, TS: flo
     #statement = f"The patient is {sepsis_status}. There is a {'high' if prediction == 1 else 'low'} probability ({probability:.2f}) that the patient is susceptible to developing sepsis."
 
     if prediction == 1:
-        status_icon = "✘"  # Red 'X' icon for positive sepsis prediction
+        status_icon = "✔"  # Red 'X' icon for positive sepsis prediction
         sepsis_explanation = "Sepsis is a life-threatening condition caused by an infection. A positive prediction suggests that the patient might be exhibiting sepsis symptoms and requires immediate medical attention."
     else:
-        status_icon = "✔"  # Green checkmark icon for negative sepsis prediction
+        status_icon = "✘"  # Green checkmark icon for negative sepsis prediction
         sepsis_explanation = "Sepsis is a life-threatening condition caused by an infection. A negative prediction suggests that the patient is not currently exhibiting sepsis symptoms."
 
     statement = f"The patient's sepsis status is {sepsis_status} {status_icon} with a probability of {probability:.2f}. {sepsis_explanation}"
