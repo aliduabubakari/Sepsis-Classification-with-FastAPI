@@ -58,7 +58,7 @@ Key challenges in this project include acquiring and preprocessing a reliable se
 ## Summary
 | Code      | Name        | Published Article |  Deployed App |
 |-----------|-------------|:-------------:|------:|
-| LP6 | Sepsis Prediction App with fastapi and Streamlit| [Medium_article] (https://medium.com/@alidu143/deploying-fastapi-for-sepsis-occurrence-prediction-f6971aa584ff)(/) | [FastapiApp] (https://huggingface.co/spaces/Abubakari/Sepsis-fastapi-prediction-app) (/) |
+| LP6 | Sepsis Prediction App with fastapi and Streamlit| [Medium_article](https://medium.com/@alidu143/deploying-fastapi-for-sepsis-occurrence-prediction-f6971aa584ff)(/) | [FastapiApp](https://huggingface.co/spaces/Abubakari/Sepsis-fastapi-prediction-app) (/) |
 
 
 ## Project Setup
@@ -66,7 +66,7 @@ Key challenges in this project include acquiring and preprocessing a reliable se
 To set up the project environment, follow these steps:
 
 1. Clone the repository:
-git clone [my_github] (https://github.com/aliduabubakari/Sepsis-Classification-with-FastAPI.git)
+git clone [my_github](https://github.com/aliduabubakari/Sepsis-Classification-with-FastAPI.git)
 
 2. Install the required dependencies:
 ```bash
