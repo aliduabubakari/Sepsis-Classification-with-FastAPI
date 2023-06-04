@@ -58,7 +58,7 @@ Key challenges in this project include acquiring and preprocessing a reliable se
 ## Summary
 | Code      | Name        | Published Article |  Deployed App |
 |-----------|-------------|:-------------:|------:|
-| LP6 | Sepsis Prediction App with fastapi and Streamlit|  [https://medium.com/@alidu143/deploying-fastapi-for-sepsis-occurrence-prediction-using-machine-learning-classification-models-f6971aa584ff](/) | [https://huggingface.co/spaces/Abubakari/Sales_Prediction#sales-prediction-app](/) |
+| LP6 | Sepsis Prediction App with fastapi and Streamlit| [Medium_article] (https://medium.com/@alidu143/deploying-fastapi-for-sepsis-occurrence-prediction-f6971aa584ff)(/) | [FastapiApp] (https://huggingface.co/spaces/Abubakari/Sepsis-fastapi-prediction-app) (/) |
 
 
 ## Project Setup
