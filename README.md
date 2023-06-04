@@ -188,9 +188,11 @@ The following models were evaluated:
 
 - **Naive Bayes:**
 
-- **Support Vector Machines (SVM):** 
+- **Stochastic Gradient Descent:** 
 
 - **Random Forest:** 
+
+- **XGBoost:** 
 
 These models were evaluated based on their F1 and AUC scores, providing insights into their performance on the imbalanced dataset. Below is the results;
 
