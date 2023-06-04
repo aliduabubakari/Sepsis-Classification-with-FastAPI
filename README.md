@@ -4,7 +4,7 @@ This project is focused on the accurate and efficient classification of sepsis c
 
 
 <p align="center">
-  <img src="images/streamlit_4.jpg" alt="Streamlit input" width="400">
+  <img src="images/streamlit_4.jpg" alt="Streamlit input" width="600">
 </p>
 
 This project aims to provide a streamlined solution for healthcare professionals to classify sepsis cases quickly and effectively.
@@ -209,7 +209,7 @@ Hyperparameter tuning was also implemented to optimize the performance of the mo
 ### Fastapi deployment 
 
 <p align="center">
-  <img src="images/fastapi.jpg" alt="FastAPI" width="400">
+  <img src="images/fastapi.jpg" alt="FastAPI" width="600">
 </p>
 
 1. Make sure you have FastAPI and any necessary dependencies installed. You can install FastAPI using pip:
@@ -233,11 +233,11 @@ uvicorn main:app --reload
 The API documentation provides details about the available endpoints, request and response formats, and example usage. You can access the documentation by visiting the /docs endpoint after starting the server (http://localhost:8000/docs).
 
 <p align="center">
-  <img src="images/fastapi1.jpg" alt="FastAPI" width="400">
+  <img src="images/fastapi1.jpg" alt="FastAPI" width="600">
 </p>
 
 <p align="center">
-  <img src="images/fastapi2.jpg" alt="FastAPI" width="400">
+  <img src="images/fastapi2.jpg" alt="FastAPI" width="600">
 </p>
 
 
@@ -298,19 +298,19 @@ Here's a step-by-step process on how to use the [Streamlit App](https://huggingf
 
 
 <p align="center">
-  <img src="images/streamlit_1.jpg" alt="Streamlit input" width="400">
+  <img src="images/streamlit_1.jpg" alt="Streamlit input" width="600">
 </p>
 
 <p align="center">
-  <img src="images/streamlit_2.jpg" alt="Streamlit input" width="400">
+  <img src="images/streamlit_2.jpg" alt="Streamlit input" width="600">
 </p>
 
 <p align="center">
-  <img src="images/streamlit_3.jpg" alt="streamlit input" width="400">
+  <img src="images/streamlit_3.jpg" alt="streamlit input" width="600">
 </p>
 
 <p align="center">
-  <img src="images/streamlit_5.jpg" alt="streamlit results" width="400">
+  <img src="images/streamlit_5.jpg" alt="streamlit results" width="600">
 </p>
 
 
