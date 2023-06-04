@@ -182,17 +182,21 @@ During the modeling phase, the evaluation of models took into consideration the 
 
 The following models were evaluated:
 
-- **Decision Tree:** The Decision Tree model achieved an F1 score of 0.602 and an AUC score of 0.725.
+- **Decision Tree:** 
 
-- **Logistic Regression:** The Logistic Regression model demonstrated improved performance with an F1 score of 0.634 and an AUC score of 0.750.
+- **Logistic Regression:** 
 
-- **Naive Bayes:** The Naive Bayes model obtained an F1 score of 0.575 and an AUC score of 0.692.
+- **Naive Bayes:**
 
-- **Support Vector Machines (SVM):** The SVM model yielded an F1 score of 0.564 and an AUC score of 0.717.
+- **Support Vector Machines (SVM):** 
 
-- **Random Forest:** The Random Forest model achieved an F1 score of 0.548 and an AUC score of 0.683.
+- **Random Forest:** 
 
-These models were evaluated based on their F1 and AUC scores, providing insights into their performance on the imbalanced dataset.
+These models were evaluated based on their F1 and AUC scores, providing insights into their performance on the imbalanced dataset. Below is the results;
+
+<p align="center">
+  <img src="images/results.jpg" alt="Model comparison" width="600">
+</p>
 
 
 
@@ -335,6 +339,7 @@ Here's a step-by-step process on how to use the [Streamlit App](https://huggingf
 For future work, incorporating clustering algorithms can be a valuable addition to sepsis identification and classification. Clustering algorithms can help in grouping similar patient data together based on patterns and similarities.
 
 ## Contact
+
 `Alidu Abubakari`
 
 `Data Analyst`
