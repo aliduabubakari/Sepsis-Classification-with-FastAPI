@@ -34,31 +34,7 @@ The objectives of the project are as follows:
 
 4. Provide a comprehensive and scalable solution that can be easily deployed in real-time healthcare environments.
 
-Key challenges in this project include acquiring and preprocessing a reliable sepsis dataset, selecting an appropriate machine learning algorithm, optimizing the model's performance, and deploying the system in a secure and efficient manner.
-
-## Project Structure
-
-- README.md
-- requirements.txt
-- Assets
-  - Final_model.joblib
-  - numerical_imputer.joblib
-  - scaler.joblib
-- Data
-  - Paitients_Files_Test.csv
-  - Paitients_Files_Train.csv
-- Fastapi
-  - Dockerfile
-  - main.py
-  - __pycache__
-    - main.cpython-39.pyc
-- images
-- Notebooks
-  - ML_Step_By_Step_Guide (1).ipynb
-- Streamlit
-  - Strealit_.jpg
-  - streamlit_app.py
-        
+Key challenges in this project include acquiring and preprocessing a reliable sepsis dataset, selecting an appropriate machine learning algorithm, optimizing the model's performance, and deploying the system in a secure and efficient manner.       
 
 
 ## Summary
