@@ -287,7 +287,7 @@ streamlit run streamlit_app.py
 
 ##### App Execution on Huggingface
 
-Here's a step-by-step process on how to use the [Streamlit App](https://huggingface.co/spaces/Abubakari/Sepsis-prediction-streamlit-app) on Huggingface:
+Here's a step-by-step process on how to use the [Streamlit App](https://huggingface.co/spaces/Abubakari/Sepsis-prediction-streamlit-app) and [API Access](https://abubakari-sepsis-fastapi-prediction-app.hf.space/docs/) on Huggingface:
 
 
 <p align="center">
